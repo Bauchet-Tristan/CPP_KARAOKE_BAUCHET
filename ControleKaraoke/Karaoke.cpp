@@ -7,15 +7,13 @@
 #endif
 #include "Karaoke.h"
 
-
-Karaoke::Karaoke(int nombre): _nombreMusic(nombre)
+std::string Karaoke::getMusicName()
 {
-     if (nombre > 13)
-    {
-        nombre = 13;
-    }
- 
-     
+    return _musicName;
+}
+
+Karaoke::Karaoke(int nombre,std::string nomMusic): _nombreMusic(nombre),_musicName(nomMusic)
+{
     for(int i; i < nombre ;i++)
     {
         std::string nomPlayer ="";

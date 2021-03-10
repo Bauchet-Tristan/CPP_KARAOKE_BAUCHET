@@ -11,9 +11,14 @@ class Karaoke
 {
      private:
         std::vector<Player*> _diff ;
+        std::string _musicName;
+
         int _nombreMusic; 
+       
+
         
 
     public : 
-        Karaoke(int _nombre);     
+        std::string getMusicName();
+        Karaoke(int _nombre,std::string nomMusic);     
 };

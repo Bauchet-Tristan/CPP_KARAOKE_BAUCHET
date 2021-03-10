@@ -12,7 +12,6 @@ using namespace std; // Ligne de base pour utiliser l'espace de nom std (la ou s
 
 int main()
 {
-    
     string nomPlayer ="";
     cout <<"ecrire un nom"<<endl;
     cin >> nomPlayer;
@@ -26,6 +25,8 @@ int main()
         Player1.getWorstScore();
         Player1.getAverageScore();
     }
-    //Karaoke Karaoke1 = Karaoke(2);
 
+    Karaoke Karaoke1 = Karaoke(1,"black and white");
+
+    cout <<"\nLe nom de la music est "<< Karaoke1.getMusicName();
 }
